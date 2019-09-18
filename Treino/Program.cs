@@ -277,6 +277,7 @@ namespace Treino
             Console.Clear();
             if (empregado.Count > 0)
             {
+                empregado.Sort((p1, p2) => p1.Nome.ToUpper().CompareTo(p2.Nome.ToUpper()));
                 foreach (Trabalho obj in empregado)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
